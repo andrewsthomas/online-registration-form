@@ -2,6 +2,137 @@
 GENERAL
 ************************************************/
 
+* {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+/***********************************************
+HEADER
+************************************************/
+
+h1 {
+  font-size: 1.75em;
+  color: white;
+  background-color: #363636;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #363636;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.latest-news {
+  font-size: 1.25em;
+  color: #b8b8b8;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.top {
+  height: 6px;
+  background: #363636;
+  margin: 40px 10px 0;
+}
+
+.bottom {
+  height: 3px;
+  background: #363636;
+  margin: 3px 10px 30px;
+}
+
+/***********************************************
+FORM: GENERAL
+************************************************/
+
+fieldset {
+  border: none;
+}
+
+legend {
+  display: block;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #363636;
+  margin-bottom: 30px;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #888888;
+  font-size: 1.2em;
+}
+
+/***********************************************
+FORM: CONTACT INFORMATION
+************************************************/
+
+#contact label,
+#contact input,
+#contact select {
+  display: block;
+}
+
+#contact input,
+#contact select {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #e8e8e8;
+  font-size: 1em;
+  color: #888888;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b8b8b8;
+  text-align: end;
+  font-style: italic;
+  font-size: 0.75em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #b8b8b8;
+  text-align: end;
+  font-style: italic;
+  font-size: 0.75em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #b8b8b8;
+  text-align: end;
+  font-style: italic;
+  font-size: 0.75em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #b8b8b8;
+  text-align: end;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+#zip {
+  max-width: 150px;
+}
+
+/***********************************************
+FORM: NEWSLETTER
+************************************************/
+
+
+
+
+
+
+
 
 
 /***********************************************

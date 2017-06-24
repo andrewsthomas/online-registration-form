@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
   </head>
   <body>
 
     <form action="index.html" method="post">
 
-      <h1>The Code Review</h1>
+      <header>
+        <h1>The Code Review</h1>
 
-      <h2>Signup for our newsletter</h2>
+        <h2>Signup for our newsletter</h2>
 
-      <p>Get the latest news on how your code is doing right in your inbox</p>
+        <p class="latest-news">Get the latest news on how your code is doing right in your inbox</p>
 
-      <fieldset>
+        <hr class="top">
+        <hr class="bottom">
+      </header>
 
+      <fieldset id="contact">
         <legend>Contact Information</legend>
 
         <label for="name">Full Name</label>
@@ -39,6 +43,7 @@
 
         <label for="state">State</label>
         <select id="state" name="user_state">
+          <option value="" selected hidden disabled>Choose State</option>
           <option value="alabama">Alabama</option>
           <option value="alaska">Alaska</option>
           <option value="arizona">Arizona</option>
@@ -94,11 +99,11 @@
 
         <label for="zip">Zip Code</label>
         <input type="text" id="zip" name="user_zip">
-
       </fieldset>
 
-      <fieldset>
+      <hr class="bottom">
 
+      <fieldset id="newsletter">
         <legend>Newsletter</legend>
 
         <label>Select the newsletters you would like to receive</label>
@@ -112,7 +117,6 @@
 
         <label for="other">Other topics you'd like to hear about</label>
         <textarea id="other" name="user_other_topics"></textarea>
-
       </fieldset>
 
       <button type="submit">Sign Up</button>
