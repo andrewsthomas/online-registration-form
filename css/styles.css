@@ -8,18 +8,17 @@ GENERAL
 }
 
 /***********************************************
-HEADER
+HEADING
 ************************************************/
 
 h1 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: white;
   background-color: #363636;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em .5em;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
@@ -28,7 +27,7 @@ h2 {
   font-size: 1.5em;
   color: #363636;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -51,13 +50,13 @@ h3 {
 .top {
   height: 6px;
   background: #363636;
-  margin: 40px 10px 0;
+  margin: 50px 10px 0;
 }
 
 .bottom {
   height: 3px;
   background: #363636;
-  margin: 3px 10px 30px;
+  margin: 3px 10px 50px;
 }
 
 /***********************************************
@@ -135,7 +134,7 @@ FORM: CONTACT INFORMATION
 }
 
 #zip {
-  max-width: 150px;
+  max-width: 175px;
 }
 
 /***********************************************
@@ -157,11 +156,13 @@ input[type="radio"] {
 }
 
 label[for="other"] {
-  margin-top: 100px;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 #other {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   height: 150px;
   border-radius: 5px;
@@ -177,7 +178,7 @@ label[for="other"] {
   width: 100%;
   font-size: 1.7em;
   color: white;
-  background-color: teal;
+  background-color: #008080;
   border-style: none;
   border-radius: 5px;
   padding: 20px 0;
@@ -198,3 +199,33 @@ footer {
 /***********************************************
 MEDIA QUERIES FOR DESKTOP
 ************************************************/
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  #contact label,
+  #contact input,
+  #contact select {
+    display: inline-block;
+  }
+  #contact label {
+    float: left;
+    height: 60px;
+    width: 30%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    vertical-align: middle;
+  }
+  #contact input,
+  #contact select {
+    max-width: 70%;
+    float: right;
+    vertical-align: middle;
+  }
+  #contact #zip {
+    float: left;
+    max-width: 175px;
+  }
+}
