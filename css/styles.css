@@ -247,7 +247,6 @@ textarea:-moz-placeholder { /* Firefox 18- */
   background-color: #bed7e2;
   color: #363636;
   cursor: pointer;
-  cursor: hand;
 }
 
 .button-wrap {
